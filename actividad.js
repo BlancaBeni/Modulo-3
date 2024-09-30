@@ -1,24 +1,22 @@
 /*Hacer una función que reciba como 
 parámetros una pila, y un número. La función debe retornar tantos elementos como diga el número (segundo parámetro).*/
 
-class miFuncion{
-    constructor(){
-    this.items = (["Manzana","Cebolla","Apio","Naranja","Papaya","Sandía","Melón"],4) 
-    }
+class mifuncion{
+    constructor(number){
 
-    pop(){
-        if(this.isEmpty()){
-            return "La pila esta vacia."
-        }
-        return this.items.pop();
+    this.items=["Manzana","Cebolla","Apio","Naranja","Papaya","Sandía","Melón"]
+    this.number=number
     }
+    Array(){
+
+    for (let i = 0; i = (this.items.length-this.number); i++) {
+        this.items.pop();
+
+    }
+    console.log(this.items);
 
     }
 }
 
-let pila = new miFuncion();
-
-pila.pop(4);
-pila.pop(5);
-pila.pop(6);
-console.log("Salida elementos: ")
+let ejer=new mifuncion(4)
+ejer.Array()
