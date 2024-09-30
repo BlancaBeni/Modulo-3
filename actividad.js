@@ -13,10 +13,7 @@ class miFuncion{
         return this.items.pop();
     }
 
-    isEmpty(){
-        return this.items.length === 0;
     }
-    
 }
 
 let pila = new miFuncion();
